@@ -12,13 +12,13 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 58px;
+    height: 68px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1C1C1D;
-    padding: 0 120px; /* Padding for spacing */
-    z-index: 999; /* Keeps header on top of other content */
+    padding: 0 120px; 
+    z-index: 999;
 }
 
 html {
@@ -149,7 +149,7 @@ html {
 }
 
 /* Tablet and Mobile version (480px and below) */
-@media (max-width: 480px) {
+@media (max-width: 430px) {
     /* Stack the links vertically */
     .topnav ul {
         padding: 0 20px;
@@ -432,7 +432,21 @@ button#CTA:hover {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 430px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 58px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1C1C1D;
+        padding: 0 20px; /* Padding for spacing */
+        z-index: 999; /* Keeps header on top of other content */
+    }
+
     #Hero-Banner {
         padding: 15px;
     }
@@ -617,7 +631,7 @@ button#CTA:hover {
 }
 
 .flip-card {
-    width: 190px;
+    width: 200px;
     height: 200px;
     perspective: 1000px;
 }
@@ -685,12 +699,12 @@ button#CTA:hover {
 
 @media (max-width: 768px) {
     #Skills-flipcard-coding {
-        gap: 15px;
+        gap: 20px;
         padding: 20px;
     }
 
     .flip-card {
-        width: 100px;
+        width: 200px;
         height: 150px;
     }
 }
@@ -931,7 +945,7 @@ footer {
 /* Responsive styles for mobile devices */
 @media (max-width: 480px) {
     #Contact-Us {
-        padding: 15px;  /* Reduce padding for mobile screens */
+        padding: 20px;  /* Reduce padding for mobile screens */
     }
 
     #Contact-Us input, #Contact-Us textarea {
